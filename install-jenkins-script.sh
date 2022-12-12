@@ -15,4 +15,6 @@ sudo apt-get install jenkins
 
 echo "jenkins ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
+sudo usermod -a -G docker jenkins
+
 sudo systemctl status jenkins
