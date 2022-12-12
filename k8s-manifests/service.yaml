@@ -5,6 +5,7 @@ metadata:
   labels:
     app: gitops-demo
   name: gitops-demo
+  namespace: default
 spec:
   ports:
   - port: 80
