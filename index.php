@@ -1,7 +1,7 @@
 <html>
 <title>GitOps - Flux - Demo</title>
 
-<body style="background: green;">
+<body style="background: red;">
 
 <?php
 echo "<div style='height: 100vh;
@@ -14,7 +14,7 @@ echo "<div style='height: 100vh;
 		  	  font-weight: bold;'>
 			pod name : " . getenv("MY_POD_NAME") . "<br> 
 			pod ip   : " . getenv("MY_POD_IP") . " <br> 
-			version  : 9.0.0  
+			version  : 10.0.0  
 		</p>";
 echo "</div>";
 ?>
