@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: gitops-demo
+  name: gitops-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gitops-demo
+  template:
+    metadata:
+      labels:
+        app: gitops-demo 
+    spec:
+      containers:
+        - name: gitops-demo-container
+          image:  siddharth67/gitops-demo:2.0.0
+          imagePullPolicy: Always
+          env:
+            - name: MY_POD_IP
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.podIP
+            - name: MY_POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
