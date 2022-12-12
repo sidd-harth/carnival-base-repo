@@ -3,7 +3,7 @@ pipeline {
 
   environment {
     NAME = "gitops-demo"
-    VERSION = "10.0.0"
+    VERSION = "9.1.0"
     IMAGE_REPO = "siddharth67"
   }
   
