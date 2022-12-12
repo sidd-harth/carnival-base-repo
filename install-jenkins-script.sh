@@ -17,4 +17,6 @@ echo "jenkins ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 sudo usermod -a -G docker jenkins
 
+systemctl restart jenkins
+
 sudo systemctl status jenkins
