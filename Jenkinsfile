@@ -17,15 +17,15 @@ pipeline {
 
     stage('Build Image') {
       steps {
-            sh "docker build -t ${NAME} ."
-            sh "docker tag ${NAME}:latest ${IMAGE_REPO}/${NAME}:${VERSION}"
+            sh "sudo docker build -t ${NAME} ."
+            sh "sudo docker tag ${NAME}:latest ${IMAGE_REPO}/${NAME}:${VERSION}"
         }
       }
 
     stage('Push Image') {
       steps {
         withDockerRegistry([credentialsId: "docker-hub", url: ""]) {
-          sh 'docker push ${IMAGE_REPO}/${NAME}:${VERSION}'
+          sh 'sudo docker push ${IMAGE_REPO}/${NAME}:${VERSION}'
         }
       }
     }
