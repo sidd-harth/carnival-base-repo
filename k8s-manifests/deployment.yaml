@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: gitops-demo-container
-          image:  siddharth67/gitops-demo:2.0.0
+          image:  siddharth67/gitops-demo:6.0.0
           imagePullPolicy: Always
           env:
             - name: MY_POD_IP
