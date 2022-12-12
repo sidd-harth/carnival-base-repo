@@ -5,13 +5,13 @@
 
 <?php
 echo "<div style='height: 100vh;
-			display: flex;
-            justify-content: center;
-            align-items: center;'>
+	          display: flex;
+                  justify-content: center;
+                  align-items: center;'>
 
 		<p style='font-size: 72px; 
 		          color: white;
-				  font-weight: bold;'>
+		  	  font-weight: bold;'>
 			pod name : " . getenv("MY_POD_NAME") . "<br> 
 			pod ip   : " . getenv("MY_POD_IP") . " <br> 
 			version  : 1.0.0  
