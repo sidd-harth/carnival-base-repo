@@ -1,0 +1,8 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageRepository
+metadata:
+  name: image-repo
+  namespace: flux-system
+spec:
+  image: docker.io/siddharth67/gitops-demo
+  interval: 1m0s
