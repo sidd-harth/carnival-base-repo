@@ -13,11 +13,11 @@ spec:
   template:
     metadata:
       labels:
-        app: gitops-demo 
+        app: gitops-demo
     spec:
       containers:
         - name: gitops-demo-container
-          image:  siddharth67/gitops-demo:9.0.0   # {"$imagepolicy": "flux-system:image-policy"}
+          image: docker.io/siddharth67/gitops-demo:9.1.0 # {"$imagepolicy": "flux-system:image-policy"}
           imagePullPolicy: Always
           env:
             - name: MY_POD_IP
