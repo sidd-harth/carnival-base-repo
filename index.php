@@ -2,27 +2,26 @@
 <title>GitOps - Flux - Demo</title>
 
 <body style="background: darkblue;">
-
+	  <div id='presentDate' 
+           style='font-size: 64px; 
+		          color: white;
+			      font-weight: bold;display: flex;
+				  justify-content: center;
+                  align-items: center;'>
+	  </div>
 <?php
 echo "<div style='height: 100vh;
 			display: flex;
             justify-content: center;
             align-items: center;'>
 
-		<p style='font-size: 72px; 
+		<p style='font-size: 64px; 
 		          color: white;
 				  font-weight: bold;'>
 			pod name : " . getenv("MY_POD_NAME") . "<br> 
 			pod ip   : " . getenv("MY_POD_IP") . " <br> 
 			version  : 11.0.0  
-		</p>
-	  </div>
-	  <div id='presentDate' 
-           style='font-size: 72px; 
-		          color: white;
-			      font-weight: bold;display: flex;
-				  justify-content: center;
-                  align-items: center;'>";       
+		</p>";       
 echo  "</div>";
 ?>
 </body>
