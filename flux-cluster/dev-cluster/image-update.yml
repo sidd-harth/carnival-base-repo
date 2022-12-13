@@ -17,7 +17,7 @@ spec:
   interval: 1m0s
   sourceRef:
     kind: GitRepository
-    name: source-php-app
+    name: flux-system
   update:
     path: ./k8s-manifests
     strategy: Setters
