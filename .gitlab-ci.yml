@@ -8,10 +8,10 @@ stages:
 docker build and push:
     stage: Build image and Push to Docker Hub
     only:
-        - master
+        - main
     before_script:
         - echo "$REGISTRY_PASSWORD" | docker login -u "$REGISTRY_USER" --password-stdin
     script:
         - docker info
-        - docker build -t $LATEST_VER .
-        - docker push $LATEST_VER
+        - docker build -t siddharth67/pp123:1.2.3 .
+        - docker push siddharth67/pp123:1.2.3
