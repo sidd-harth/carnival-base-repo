@@ -1,8 +1,6 @@
 image: docker:latest
 services:
     - docker:dind
-variables:
-    LATEST_VER: {siddharth67/pp123:1.2.3}
 stages:
     - Build image and Push to Docker Hub
 docker build and push:
