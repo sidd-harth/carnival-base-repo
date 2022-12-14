@@ -20,7 +20,7 @@ echo "<div style='height: 100vh;
 				  font-weight: bold;'>
 			pod name : " . getenv("MY_POD_NAME") . "<br> 
 			pod ip   : " . getenv("MY_POD_IP") . " <br> 
-			version  : 12.0.0  
+			version  : 6.7.4
 		</p>";       
 echo  "</div>";
 ?>
