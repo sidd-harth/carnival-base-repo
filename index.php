@@ -3,7 +3,7 @@
 
 <body style="background: darkblue;">
 	  <div id='presentDate' 
-           style='font-size: 64px; 
+           style='font-size: 32px; 
 		          color: white;
 			      font-weight: bold;display: flex;
 				  justify-content: center;
@@ -15,12 +15,12 @@ echo "<div style='height: 100vh;
             justify-content: center;
             align-items: center;'>
 
-		<p style='font-size: 64px; 
+		<p style='font-size: 32px; 
 		          color: white;
 				  font-weight: bold;'>
 			pod name : " . getenv("MY_POD_NAME") . "<br> 
 			pod ip   : " . getenv("MY_POD_IP") . " <br> 
-			version  : 11.0.0  
+			version  : 12.0.0  
 		</p>";       
 echo  "</div>";
 ?>
