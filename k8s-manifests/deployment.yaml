@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: gitops-demo-container
-          image: docker.io/siddharth67/gitops-demo:9.1.0 # {"$imagepolicy": "flux-system:image-policy"}
+          image: docker.io/siddharth67/gitops-demo-flux:1.0.0
           imagePullPolicy: Always
           env:
             - name: MY_POD_IP
